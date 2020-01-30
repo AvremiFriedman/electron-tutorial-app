@@ -13,13 +13,13 @@ var path = require('path')
 require('./dialog/dialog')
 
 // Module to create native browser window.
-const BrowserWindow = electron.BrowserWindow
+const BrowserWindow = electron.BrowserWindow;
 //Adds the main Menu to our app
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
-let mainWindow
-let secondWindow
+let mainWindow;
+let secondWindow;
 
 function createWindow () {
   // Create the browser window.
@@ -45,7 +45,7 @@ function createWindow () {
 
   // Show the mainwindow when it is loaded and ready to show
   mainWindow.once('ready-to-show', () => {
-    mainWindow.show()
+    mainWindow.show();
   })
 
   // Emitted when the window is closed.
